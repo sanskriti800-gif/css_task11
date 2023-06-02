@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .page{
+    display: grid;
+    grid-template-areas:'left right right right';
+    background-color: rgb(165, 195, 68);
+    height: 50vh;
+}
+.left{
+    grid-area: left;
+}
+.right{
+    grid-area: right;
+    color:rgb(95, 10, 39);
+}
+.left li{
+    list-style-type: none;
+    padding: 5px 20px;
+    margin:10px 0px;
+    border-right:15px solid #000;
+    width: 10vw;
+    background-color: #fff;
+    color:blue;
+}
+.left li:hover{
+    color: rgb(150, 6, 54);
+}
+.right hr{
+    color:rgb(150, 6, 54);
+}
+
+</style>
+<body>
+    <div class="page">
+        <div class="left">
+            <ul>
+                <li>Home Page</li>
+                <li>Musing</li>
+                <li>My Town</li>
+                <li>Links</li>
+            </ul>
+        </div>
+        <div class="right">
+            <h1>My First styled page</h1>
+            <p>Welcome to my styled page!</p>
+            <p>It lacks images, but atleast it has style. And it has links, even if they don't go anywhere...</p>
+            <p>There should be more here, but I don't know what yet.</p>
+            <hr>
+            <address>Made 5 April 2004</address>
+            <address>by myself.</address>
+        </div>
+    </div>
+</body>
+</html>
